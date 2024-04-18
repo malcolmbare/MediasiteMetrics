@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/UniversalCaptureSpecification/v1">
+  <Title>e6d4ab68-1c7f-4d37-98e1-c92750d67123.mp4</Title>
+  <Description>This is a video session with the uploaded video file e6d4ab68-1c7f-4d37-98e1-c92750d67123.mp4</Description>
+  <Date>2024-04-18T21:44:51.356403-00:00</Date>
+  <ThumbnailTime>PT5S</ThumbnailTime>
+  <Videos>
+    <Video>
+      <Start>PT0S</Start>
+      <File>e6d4ab68-1c7f-4d37-98e1-c92750d67123.mp4</File>
+      <Type>Primary</Type>
+    </Video>
+    <Video>
+      <Start>PT0S</Start>
+      <File>output.mp4</File>
+      <Type>Secondary</Type>
+    </Video>
+  </Videos>
+</Session>
