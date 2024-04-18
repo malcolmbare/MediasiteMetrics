@@ -4,6 +4,7 @@ from datetime import datetime
 import requests
 import zipfile
 from io import BytesIO
+import xml.etree.ElementTree as ET
 from ReqAndAuth import mediasite
 from ReqAndAuth import panopto
 import codecs
@@ -48,6 +49,7 @@ class mediasitePresentation():
         if len(self.image_stream) == len(self.xml_slide_times):
             return([(self.image_stream[i], self.xml_slide_times[i]) for i in range(len(self.xml_slide_times))])
     def makeSlideVideo(self):
+        #30fps preferable for latency, though 15fps with checkRound enabled is more efficient
         fps = 30
         w, h = None, None
         for file, duration in self.slideTuples:
